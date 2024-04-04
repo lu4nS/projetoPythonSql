@@ -150,13 +150,13 @@ class App:
         aluno = self.criarAluno()
         aluno.matricula = self.txt_matricula.get()
         self.bd.update(aluno)
-        messagebox.showinfo('sucesso', 'aluno cadastrado com sucesso')
+        messagebox.showinfo('sucesso', 'editado com sucesso')
         self.limparCampos()
         self.atualizarTabela()
 
     def deletarAluno(self):
         self.bd.delete(self.txt_matricula.get())
-        messagebox.showinfo('sucesso', 'aluno cadastrado com sucesso')
+        messagebox.showinfo('sucesso', 'aluno deletado com sucesso')
         self.limparCampos()
         self.atualizarTabela()
 
